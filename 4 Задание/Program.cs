@@ -10,18 +10,30 @@ namespace _4_Задание
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("++++++++");
-            for(int i = 0; i < 3; i++)
+            Console.WriteLine("высота");
+            int h = int.Parse(Console.ReadLine());
+            Console.WriteLine("ширина");
+            int w = int.Parse(Console.ReadLine());
+            for (int i = 0; i <= w; i++)
             {
                 Console.Write("+");
-                for(int j = 0; j < 6; j++)
+            }
+            Console.WriteLine("+");
+            for(int i = 0; i < h; i++)
+            {
+                Console.Write("+");
+                for(int j = 0; j < w; j++)
                 {
                     Console.Write("*");
                 }
                 Console.Write("+");
                 Console.WriteLine("");
             }
-            Console.WriteLine("++++++++");
+            for (int i = 0; i <= w; i++)
+            {
+                Console.Write("+");
+            }
+            Console.WriteLine("+");
         }
     }
 }
